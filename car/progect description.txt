@@ -1,0 +1,57 @@
+This project is a Streamlit-based web application designed for analyzing and predicting car production data. The app provides an interactive platform where users can:
+
+Load Data:
+
+Upload CSV files directly.
+
+Or load data from a local file path.
+
+Displays dataset summary, number of rows/columns, and missing values.
+
+Explore Data:
+
+View dataset information, descriptive statistics, and sample rows.
+
+Handle missing values (delete, mean, mode, fill with zero).
+
+Statistical Analysis:
+
+Visualize data distribution (histograms).
+
+Analyze relationships between variables (scatter plots, box plots).
+
+Generate correlation matrix heatmaps.
+
+Modeling & Prediction:
+
+Choose target and feature variables.
+
+Train ML models:
+
+Linear Regression, Ridge, Lasso
+
+Decision Tree, Random Forest, Gradient Boosting
+
+Automatic data preprocessing (scaling & encoding).
+
+Split data into training/testing.
+
+Results & Reports:
+
+Evaluate models with metrics: MSE, RMSE, MAE, R².
+
+Display prediction results (actual vs predicted).
+
+Feature importance visualization for tree-based models.
+
+Predict new values with user-input features.
+
+Technologies Used:
+
+Python (Pandas, NumPy, Scikit-learn)
+
+Data Visualization (Matplotlib, Seaborn, Plotly)
+
+Machine Learning Models
+
+Streamlit (for interactive UI)
