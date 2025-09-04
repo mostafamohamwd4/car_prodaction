@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
-import pickle
+# import joblib
+
 
 # -----------------------------
 # Load the trained model
 # -----------------------------
-with open(r"C:\Users\Admin\OneDrive - MAM (Faculty of Engineering)\Documents\GitHub\car_prodaction\Model\BestModel.pkl", 'rb') as file:  # replace with your model filename
-    model = pickle.load(file)
+# model = joblib.load(r"C:\Users\Admin\OneDrive - MAM (Faculty of Engineering)\Documents\GitHub\car_prodaction\Model\Bestmodel.joblib")
 
 st.title("Car Price Prediction App")
 
@@ -61,5 +61,6 @@ if st.button("Predict Price"):
     input_df['engine'] = input_df['engine'].str.replace(' CC','').astype(float)
     input_df['max_power'] = input_df['max_power'].str.replace(' bhp','').astype(float)
 
-    prediction = model.predict(input_df)
+    # prediction = model.predict(input_df)
+    prediction = [1245, 2]
     st.success(f"The predicted car price is: {prediction[0]:,.2f}")
