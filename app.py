@@ -5,7 +5,7 @@ import pickle
 # -----------------------------
 # Load the trained model
 # -----------------------------
-with open('./Model/BestModel.pkl', 'rb') as file:  # replace with your model filename
+with open(r"C:\Users\Admin\OneDrive - MAM (Faculty of Engineering)\Documents\GitHub\car_prodaction\Model\BestModel.pkl", 'rb') as file:  # replace with your model filename
     model = pickle.load(file)
 
 st.title("Car Price Prediction App")
