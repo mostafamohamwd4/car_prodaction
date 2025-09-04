@@ -46,7 +46,7 @@ Feature importance visualization for tree-based models.
 
 Predict new values with user-input features.
 
-⚙️ Technologies Used:
+Technologies Used:
 
 Python (Pandas, NumPy, Scikit-learn)
 
