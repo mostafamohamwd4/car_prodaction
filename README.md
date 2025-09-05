@@ -1,31 +1,31 @@
-# 🚗 Car Price Prediction App
+#  Car Price Prediction App
 
-This is a **Streamlit web application** that predicts car prices based on user-provided input features such as mileage, engine capacity, fuel type, and more.
-
----
-
-##  Features
-- User-friendly interface built with **Streamlit**.
-- Accepts various car features as input:
-  - Selling Price  
-  - Kilometers Driven  
-  - Fuel Type (Petrol, Diesel, CNG)  
-  - Seller Type (Individual, Dealer, Trustmark Dealer)  
-  - Transmission (Manual / Automatic)  
-  - Owner Type  
-  - Mileage  
-  - Engine (CC)  
-  - Max Power (bhp)  
-  - Number of Seats  
-  - Car Age (Years)  
-- Converts text-based inputs (`mileage`, `engine`, `max_power`) into numerical values for prediction.  
-- Displays the predicted car price in a clean format.  
+A **Machine Learning powered web application** built with [Streamlit](https://streamlit.io/) that predicts the **resale price of cars** based on their features (mileage, engine capacity, fuel type, etc.).
 
 ---
 
-## 🛠 Installation & Setup
+##  Key Features
+Interactive web interface using **Streamlit**  
+Takes multiple car attributes as input (e.g., mileage, engine CC, seats, age)  
+Converts user-friendly text input into numerical values automatically  
+Shows the predicted price in a clean, formatted style  
+Ready to integrate with any **trained ML model** (Joblib format)  
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/car-price-prediction.git
-   cd car-price-prediction
+---
+
+##  Input Features
+The app collects the following features from the user:
+
+| Feature         | Description                                      | Example            |
+|-----------------|--------------------------------------------------|--------------------|
+| Selling Price   | Current selling price (optional input)           | `450000`           |
+| Km Driven       | Distance driven by the car                       | `145500`           |
+| Fuel Type       | 1: Petrol, 2: Diesel, 3: CNG                     | `1`                |
+| Seller Type     | 1: Individual, 2: Dealer, 3: Trustmark Dealer    | `2`                |
+| Transmission    | 1: Manual, 2: Automatic                          | `1`                |
+| Owner           | Number of previous owners                        | `0`                |
+| Mileage         | Mileage (converted to float automatically)       | `20 kmpl` → `20.0` |
+| Engine          | Engine displacement (CC, converted to float)     | `1200 CC` → `1200` |
+| Max Power       | Maximum power (bhp, converted to float)          | `75 bhp` → `75.0`  |
+| Seats           | Number of seats                                  | `5`                |
+| Age             | Car age in years                                 | `5`                |
